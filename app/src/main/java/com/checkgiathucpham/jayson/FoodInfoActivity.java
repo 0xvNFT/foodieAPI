@@ -42,7 +42,7 @@ public class FoodInfoActivity extends AppCompatActivity {
         favoriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Save the selected FoodDish object to SharedPreferences
+
                 SharedPreferences sharedPreferences = getSharedPreferences("Favorites", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(finalFoodDish1.getName(), new Gson().toJson(finalFoodDish1));
