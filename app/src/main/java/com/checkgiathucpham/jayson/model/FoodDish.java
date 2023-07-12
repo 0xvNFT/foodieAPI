@@ -54,4 +54,8 @@ public class FoodDish implements Parcelable {
         dest.writeInt(imageResId);
         dest.writeString(description);
     }
+
+    public int getImageId() {
+        return imageResId;
+    }
 }

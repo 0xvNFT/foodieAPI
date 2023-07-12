@@ -71,7 +71,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.menu_item1) {
-            Toast.makeText(this, "Menu Item 1 clicked", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, FavoriteActivity.class);
+            startActivity(intent);
+            drawerLayout.closeDrawer(GravityCompat.START);
+            return true;
         } else if (itemId == R.id.menu_item2) {
             Toast.makeText(this, "Giới thiệu", Toast.LENGTH_SHORT).show();
             openWebPage("https://www.google.com/");
