@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.checkgiathucpham.jayson.adapter.FoodContentAdapter;
+import com.checkgiathucpham.jayson.fooddish.FoodDishActivity;
 
 public class FoodContentActivity extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class FoodContentActivity extends AppCompatActivity {
                 R.drawable.food_content7
         };
 
-        FoodContentAdapter adapter = new FoodContentAdapter(imageIds);
+        FoodContentAdapter adapter = new FoodContentAdapter(this, imageIds);
         gridView.setAdapter(adapter);
 
         ImageView mainFoodContentImageView = findViewById(R.id.main_food_content);

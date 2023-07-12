@@ -1,4 +1,4 @@
-package com.checkgiathucpham.jayson;
+package com.checkgiathucpham.jayson.foodpricelist;
 
 import android.os.Bundle;
 import android.widget.TableLayout;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
+
+import com.checkgiathucpham.jayson.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

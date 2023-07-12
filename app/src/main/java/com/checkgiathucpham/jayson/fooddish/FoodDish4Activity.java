@@ -1,4 +1,4 @@
-package com.checkgiathucpham.jayson;
+package com.checkgiathucpham.jayson.fooddish;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,13 +9,15 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.checkgiathucpham.jayson.FoodInfoActivity;
+import com.checkgiathucpham.jayson.R;
 import com.checkgiathucpham.jayson.adapter.FoodDishAdapter;
 import com.checkgiathucpham.jayson.model.FoodDish;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FoodDishActivity extends AppCompatActivity {
+public class FoodDish4Activity extends AppCompatActivity {
 
     private final String[] dishNames = {
             "Cá đuối nấu canh chua bắp chuối\n" +
@@ -93,7 +95,7 @@ public class FoodDishActivity extends AppCompatActivity {
         listView.setOnItemClickListener((parent, view, position, id) -> {
             FoodDish selectedDish = dishList.get(position);
 
-            Intent intent = new Intent(FoodDishActivity.this, FoodInfoActivity.class);
+            Intent intent = new Intent(FoodDish4Activity.this, FoodInfoActivity.class);
             intent.putExtra("food_dish", selectedDish);
             startActivity(intent);
         });

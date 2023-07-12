@@ -1,4 +1,4 @@
-package com.checkgiathucpham.jayson;
+package com.checkgiathucpham.jayson.foodpricelist;
 
 import android.os.Bundle;
 import android.widget.TableLayout;
@@ -8,11 +8,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
 
+import com.checkgiathucpham.jayson.R;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class FoodPriceList2Activity extends AppCompatActivity {
+public class FoodPriceList3Activity extends AppCompatActivity {
 
     private TextView dateTextView;
     private TableLayout tableLayout;
@@ -21,7 +23,7 @@ public class FoodPriceList2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_price_list2);
+        setContentView(R.layout.activity_food_price_list3);
 
         dateTextView = findViewById(R.id.date_text_view);
         String currentDate = new SimpleDateFormat("EEE, dd MMM yyyy", Locale.getDefault()).format(new Date());

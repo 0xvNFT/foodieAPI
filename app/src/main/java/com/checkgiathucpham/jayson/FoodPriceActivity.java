@@ -7,6 +7,10 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.checkgiathucpham.jayson.foodpricelist.FoodPriceList1Activity;
+import com.checkgiathucpham.jayson.foodpricelist.FoodPriceList2Activity;
+import com.checkgiathucpham.jayson.foodpricelist.FoodPriceList3Activity;
+
 public class FoodPriceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

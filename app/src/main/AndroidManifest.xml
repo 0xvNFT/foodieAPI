@@ -22,7 +22,31 @@
             android:exported="false" />
 
         <activity
-            android:name=".FoodDishActivity"
+            android:name=".fooddish.FoodDishActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish2Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish3Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish4Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish5Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish6Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".fooddish.FoodDish7Activity"
             android:exported="false" />
 
         <activity
@@ -34,15 +58,15 @@
             android:exported="false" />
 
         <activity
-            android:name=".FoodPriceList1Activity"
+            android:name=".foodpricelist.FoodPriceList1Activity"
             android:exported="false" />
 
         <activity
-            android:name=".FoodPriceList2Activity"
+            android:name=".foodpricelist.FoodPriceList2Activity"
             android:exported="false" />
 
         <activity
-            android:name=".FoodPriceList3Activity"
+            android:name=".foodpricelist.FoodPriceList3Activity"
             android:exported="false" />
 
         <activity
