@@ -17,7 +17,7 @@ public class FoodInfoActivity extends AppCompatActivity {
 
     private TextView dishNameTextView;
     private TextView dishDescriptionTextView;
-
+    private Button shareButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         dishNameTextView = findViewById(R.id.dish_name);
         dishDescriptionTextView = findViewById(R.id.dish_description);
+
         Button favoriteButton = findViewById(R.id.button_fav);
         Intent intent = getIntent();
         FoodDish foodDish = null;
@@ -51,6 +52,13 @@ public class FoodInfoActivity extends AppCompatActivity {
                 Toast.makeText(FoodInfoActivity.this, "Added to Favorites", Toast.LENGTH_SHORT).show();
             }
         });
+        shareButton = findViewById(R.id.button_share);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareDish();
+            }
+        });
 
     }
 
@@ -60,6 +68,17 @@ public class FoodInfoActivity extends AppCompatActivity {
         String jsonFoodDish = new Gson().toJson(foodDish);
         editor.putString(foodDish.getName(), jsonFoodDish);
         editor.apply();
+    }
+
+    private void shareDish() {
+        String dishName = dishNameTextView.getText().toString();
+        String dishDescription = dishDescriptionTextView.getText().toString();
+
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, dishName);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, dishDescription);
+        startActivity(Intent.createChooser(shareIntent, "Share via"));
     }
 
 }
