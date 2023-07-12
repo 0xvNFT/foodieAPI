@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Jayson</string>
+    <string name="loading">Loading...</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Delicious">Món ngon sẵn sàng</string>
+    <string name="happy">Vui nấu mỗi ngày !</string>
+    <string name="search">Search          </string>
+    <string name="cooking">Giá thành thực phẩm</string>
+    <string name="Favorite">Yêu Thích</string>
+    <string name="Introduction">Giới Thiệu</string>
+    <string name="Policy">Chính sách</string>
+    <string name="Support">Hỗ trợ</string>
+    <string name="dac_san">Món đặc sản</string>
+    <string name="dish_image">dish image</string>
+    <string name="prices">Giá Thực phẩm</string>
+    <string name="share">Chia sẻ</string>
+    <string name="Vegetable">Rau Củ - Quả</string>
+    <string name="Fish">Thịt - Cá</string>
+    <string name="Agricultural">Nông sản</string>
+    <string name="telegram">Telegram</string>
+    <string name="zalo">Zalo</string>
+
+</resources>
